@@ -43,7 +43,7 @@ const query = async (text, params) => {
                         email: 'demo@example.com',
                         // For demo purposes only - in production, users must be in real database
                         // This hash is for the password "password" - DO NOT use in production
-                        password_hash: '$2b$10$YAhZEhVGbZuXPEThBY7g857q2jqwMBgXi',
+                        password_hash: '$2b$10$KM6GhXyqV/wD8H8x22vwXu3NyZ.5B7CZc2z5gEyn6lk.Py1ZH2feG',
                         role: 'student'
                     }]
                 };

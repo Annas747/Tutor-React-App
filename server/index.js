@@ -61,7 +61,7 @@ app.get('/test-db', async (req, res) => {
 app.use(express.static(path.join(__dirname, '../client/dist')));
 
 // Serve React index.html for any other GET requests not starting with /api
-app.get('*', (req, res) => {
+app.get('/(.*)', (req, res) => {
     if (req.originalUrl.startsWith('/api')) {
         return res.status(404).json({ error: `Not Found - ${req.originalUrl}` });
     }

@@ -1,0 +1,24 @@
+{
+    "logGroups": [
+        {
+            "logGroupName": "/aws/apprunner/Tutor-React-App/5ce7265a12624fd2862404e9320047b5/service",
+            "creationTime": 1772119107629,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:us-east-1:796115666878:log-group:/aws/apprunner/Tutor-React-App/5ce7265a12624fd2862404e9320047b5/service:*",
+            "storedBytes": 0,
+            "logGroupClass": "STANDARD",
+            "logGroupArn": "arn:aws:logs:us-east-1:796115666878:log-group:/aws/apprunner/Tutor-React-App/5ce7265a12624fd2862404e9320047b5/service",
+            "deletionProtectionEnabled": false
+        },
+        {
+            "logGroupName": "/aws/apprunner/Tutor-React-App/930539e69cea43f0948dc232b5c66e91/service",
+            "creationTime": 1772120118089,
+            "metricFilterCount": 0,
+            "arn": "arn:aws:logs:us-east-1:796115666878:log-group:/aws/apprunner/Tutor-React-App/930539e69cea43f0948dc232b5c66e91/service:*",
+            "storedBytes": 0,
+            "logGroupClass": "STANDARD",
+            "logGroupArn": "arn:aws:logs:us-east-1:796115666878:log-group:/aws/apprunner/Tutor-React-App/930539e69cea43f0948dc232b5c66e91/service",
+            "deletionProtectionEnabled": false
+        }
+    ]
+}

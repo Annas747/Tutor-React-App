@@ -1,0 +1,29 @@
+{
+    "ServiceName": "Tutor-React-App",
+    "SourceConfiguration": {
+        "CodeRepository": {
+            "RepositoryUrl": "https://github.com/Annas-A7/Tutor-React-App",
+            "SourceCodeVersion": {
+                "Type": "BRANCH",
+                "Value": "master"
+            },
+            "CodeConfiguration": {
+                "ConfigurationSource": "API",
+                "CodeConfigurationValues": {
+                    "Runtime": "NODEJS_22",
+                    "BuildCommand": "cd client && npm install --include=dev && npm run build",
+                    "StartCommand": "cd client && npm start -- --host --port 5173",
+                    "Port": "5173"
+                }
+            }
+        },
+        "AutoDeploymentsEnabled": true,
+        "AuthenticationConfiguration": {
+            "ConnectionArn": "arn:aws:apprunner:us-east-1:796115666878:connection/AppRunnerConnection/8f352136418bb1d8db6a6c44c9258278"
+        }
+    },
+    "InstanceConfiguration": {
+        "Cpu": "1 vCPU",
+        "Memory": "2 GB"
+    }
+}

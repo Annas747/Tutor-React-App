@@ -1,4 +1,5 @@
 const express = require('express');
+const path = require('path');
 const cors = require('cors');
 const helmet = require('helmet');
 const rateLimit = require('express-rate-limit');
@@ -54,6 +55,17 @@ app.get('/test-db', async (req, res) => {
     } catch (err) {
         res.status(500).json({ error: 'Database connection failed' });
     }
+});
+
+// Serve React static files in production setup
+app.use(express.static(path.join(__dirname, '../client/dist')));
+
+// Serve React index.html for any other GET requests not starting with /api
+app.get('*', (req, res) => {
+    if (req.originalUrl.startsWith('/api')) {
+        return res.status(404).json({ error: `Not Found - ${req.originalUrl}` });
+    }
+    res.sendFile(path.join(__dirname, '../client/dist/index.html'));
 });
 
 // 404 Handler

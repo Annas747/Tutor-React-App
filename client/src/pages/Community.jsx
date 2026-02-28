@@ -15,7 +15,7 @@ export default function Community() {
     useEffect(() => {
         const fetchMessages = async () => {
             try {
-                const response = await fetch('http://localhost:5000/api/messages');
+                const response = await fetch('/api/messages');
                 if (response.ok) {
                     const data = await response.json();
                     setMessages(prev => {
@@ -47,7 +47,7 @@ export default function Community() {
 
         setSending(true);
         try {
-            const response = await fetch('http://localhost:5000/api/messages', {
+            const response = await fetch('/api/messages', {
                 method: 'POST',
                 headers: { 'Content-Type': 'application/json' },
                 body: JSON.stringify({
@@ -106,8 +106,8 @@ export default function Community() {
                                             </span>
                                         </div>
                                         <div className={`px-4 py-2.5 rounded-2xl shadow-sm text-sm ${isMe
-                                                ? 'bg-primary-600 text-white rounded-br-none'
-                                                : 'bg-white border border-slate-100 text-slate-700 rounded-bl-none'
+                                            ? 'bg-primary-600 text-white rounded-br-none'
+                                            : 'bg-white border border-slate-100 text-slate-700 rounded-bl-none'
                                             }`}>
                                             {msg.content}
                                         </div>
@@ -156,7 +156,7 @@ export default function Community() {
                                     {member.name.charAt(0)}
                                 </div>
                                 <span className={`absolute bottom-0 right-0 w-3 h-3 rounded-full border-2 border-white ${member.status === 'online' ? 'bg-green-500' :
-                                        member.status === 'away' ? 'bg-amber-500' : 'bg-slate-300'
+                                    member.status === 'away' ? 'bg-amber-500' : 'bg-slate-300'
                                     }`}></span>
                             </div>
                             <div>

@@ -1,0 +1,26 @@
+{
+    "events": [
+        {
+            "timestamp": 1772119107244,
+            "message": "[AppRunner] Deployment with ID : b9dfb9f144db423e92a40b5bb5c3ffb7 started. Triggering event : SERVICE_CREATE",
+            "ingestionTime": 1772119107668
+        },
+        {
+            "timestamp": 1772119107399,
+            "message": "[AppRunner] Deployment Artifact: [Repo Type: Source], [Repository: https://github.com/Annas-A7/Tutor-React-App], [Branch: master], [SourceDirectory: /]",
+            "ingestionTime": 1772119107836
+        },
+        {
+            "timestamp": 1772119174052,
+            "message": "[AppRunner] Failed to create pipeline for automatic deployments.",
+            "ingestionTime": 1772119174315
+        },
+        {
+            "timestamp": 1772119176451,
+            "message": "[AppRunner] Deployment with ID : b9dfb9f144db423e92a40b5bb5c3ffb7 failed. Failure reason : Failed to access source code.",
+            "ingestionTime": 1772119176915
+        }
+    ],
+    "nextForwardToken": "f/39519578215463680379024480105133511160399805551112028160/s",
+    "nextBackwardToken": "b/39519576672096007424315644265156441106368341055601573888/s"
+}

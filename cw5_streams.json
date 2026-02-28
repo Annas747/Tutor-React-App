@@ -1,0 +1,24 @@
+{
+    "logStreams": [
+        {
+            "logStreamName": "events",
+            "creationTime": 1772120118346,
+            "firstEventTimestamp": 1772120117806,
+            "lastEventTimestamp": 1772120186880,
+            "lastIngestionTime": 1772120187188,
+            "uploadSequenceToken": "49039859663260208173362312792788188415798759442278838133",
+            "arn": "arn:aws:logs:us-east-1:796115666878:log-group:/aws/apprunner/Tutor-React-App/930539e69cea43f0948dc232b5c66e91/service:log-stream:events",
+            "storedBytes": 0
+        },
+        {
+            "logStreamName": "deployment/3c5bd80597534f138ce7ef7c973386b8",
+            "creationTime": 1772120118127,
+            "firstEventTimestamp": 1772120117649,
+            "lastEventTimestamp": 1772120186791,
+            "lastIngestionTime": 1772120187558,
+            "uploadSequenceToken": "49039859663260208665176671233207062584850223300813582113",
+            "arn": "arn:aws:logs:us-east-1:796115666878:log-group:/aws/apprunner/Tutor-React-App/930539e69cea43f0948dc232b5c66e91/service:log-stream:deployment/3c5bd80597534f138ce7ef7c973386b8",
+            "storedBytes": 0
+        }
+    ]
+}

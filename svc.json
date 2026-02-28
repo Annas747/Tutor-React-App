@@ -1,0 +1,60 @@
+{
+    "Service": {
+        "ServiceName": "Tutor-React-App",
+        "ServiceId": "5ce7265a12624fd2862404e9320047b5",
+        "ServiceArn": "arn:aws:apprunner:us-east-1:796115666878:service/Tutor-React-App/5ce7265a12624fd2862404e9320047b5",
+        "ServiceUrl": "ypr4katc4c.us-east-1.awsapprunner.com",
+        "CreatedAt": "2026-02-26T09:18:25-06:00",
+        "UpdatedAt": "2026-02-26T09:18:25-06:00",
+        "Status": "CREATE_FAILED",
+        "SourceConfiguration": {
+            "CodeRepository": {
+                "RepositoryUrl": "https://github.com/Annas-A7/Tutor-React-App",
+                "SourceCodeVersion": {
+                    "Type": "BRANCH",
+                    "Value": "master"
+                },
+                "CodeConfiguration": {
+                    "ConfigurationSource": "API",
+                    "CodeConfigurationValues": {
+                        "Runtime": "NODEJS_22",
+                        "BuildCommand": "cd client && npm install && npm run build",
+                        "StartCommand": "cd client && npm start -- --host --port 5173",
+                        "Port": "5173"
+                    }
+                },
+                "SourceDirectory": "/"
+            },
+            "AutoDeploymentsEnabled": true,
+            "AuthenticationConfiguration": {
+                "ConnectionArn": "arn:aws:apprunner:us-east-1:796115666878:connection/AppRunnerConnection/8f352136418bb1d8db6a6c44c9258278"
+            }
+        },
+        "InstanceConfiguration": {
+            "Cpu": "1024",
+            "Memory": "2048"
+        },
+        "HealthCheckConfiguration": {
+            "Protocol": "TCP",
+            "Path": "/",
+            "Interval": 5,
+            "Timeout": 2,
+            "HealthyThreshold": 1,
+            "UnhealthyThreshold": 5
+        },
+        "AutoScalingConfigurationSummary": {
+            "AutoScalingConfigurationArn": "arn:aws:apprunner:us-east-1:796115666878:autoscalingconfiguration/DefaultConfiguration/1/00000000000000000000000000000001",
+            "AutoScalingConfigurationName": "DefaultConfiguration",
+            "AutoScalingConfigurationRevision": 1
+        },
+        "NetworkConfiguration": {
+            "EgressConfiguration": {
+                "EgressType": "DEFAULT"
+            },
+            "IngressConfiguration": {
+                "IsPubliclyAccessible": true
+            },
+            "IpAddressType": "IPV4"
+        }
+    }
+}

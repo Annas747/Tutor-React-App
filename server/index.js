@@ -43,9 +43,7 @@ const errorHandler = require('./middleware/errorMiddleware');
 // Uploads or other routes
 // app.use('/api/courses', require('./routes/courses'));
 
-app.get('/', (req, res) => {
-    res.send('AI Education Platform API is running');
-});
+
 
 // Test DB Connection
 app.get('/test-db', async (req, res) => {

@@ -22,22 +22,20 @@ export const AuthProvider = ({ children }) => {
 
     const login = async (email, password) => {
         try {
-            const response = await fetch('/api/auth/login', {
-                method: 'POST',
-                headers: { 'Content-Type': 'application/json' },
-                body: JSON.stringify({ email, password })
-            });
+            // DEMO MODE: Bypass authentication and accept any login
+            const demoUser = {
+                id: Math.floor(Math.random() * 1000),
+                name: email.split('@')[0] || 'Demo Student',
+                email: email,
+                role: 'student'
+            };
 
-            if (!response.ok) {
-                const errorData = await response.json();
-                throw new Error(errorData.error || 'Login failed');
-            }
+            const demoToken = 'demo_token_' + Date.now();
 
-            const data = await response.json();
-            setUser(data.user);
-            localStorage.setItem('token', data.token);
-            localStorage.setItem('user', JSON.stringify(data.user));
-            return data.user;
+            setUser(demoUser);
+            localStorage.setItem('token', demoToken);
+            localStorage.setItem('user', JSON.stringify(demoUser));
+            return demoUser;
         } catch (error) {
             throw error;
         }
